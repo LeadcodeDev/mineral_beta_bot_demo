@@ -27,6 +27,7 @@ jobs:
           VERSION=$(git rev-parse --short HEAD)
           echo "$VERSION is used to update develop values.yaml"
           yq -ie ".image.tag=\"$VERSION\"" ./kubernetes/helmfiles/develop/values.yaml
+          yq -ie ".image.tag=\"$VERSION\"" ./kubernetes/helmfiles/production/values.yaml
       - name: Commit changes
         run: |
           VERSION=$(git rev-parse --short HEAD)
