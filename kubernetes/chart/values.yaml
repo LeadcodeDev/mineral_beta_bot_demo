@@ -1,0 +1,15 @@
+replicas: 1
+
+dartEnv: production
+httpVersion: 10
+wssVersion: 10
+intent: '3276799'
+logLevel: trace
+
+kubeSecret: mineral-bot-credentials
+
+image:
+  registry: ghcr.io
+  repository: leadcodedev/mineral_hexagonal_bot_test
+  pullSecretName: registry-credentials
+

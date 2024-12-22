@@ -8,7 +8,7 @@ import 'package:path/path.dart';
 final class PostCommands with Application implements CommandDefinition {
   PlaceholderRepositoryContract get _repository => ioc.resolve<PlaceholderRepositoryContract>();
 
-  File get config => File(join(app.configDir!.path, 'cli', 'post.yaml'));
+  File get config => File(join(app.configDir!.path, 'commands', 'post.yaml'));
 
   Future<void> fetchAll(CommandContext ctx) async {
     final posts = await _repository.getPosts();

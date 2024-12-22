@@ -1,0 +1,10 @@
+environments:
+  develop:
+---
+releases:
+  - name: mineral
+    namespace: mineral
+    chart: ../chart
+    version: 0.1.0
+    values:
+      - ./{{ .Environment.Name }}/values.yaml
