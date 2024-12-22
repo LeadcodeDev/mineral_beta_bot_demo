@@ -1,0 +1,24 @@
+name: hexagonal_bot_test
+description: A sample command-line application.
+version: 1.0.0
+publish_to: 'none'
+
+mineral:
+  commands:
+    - name: say:hello
+      description: Say hello command !
+      entrypoint: cli/hello_command.dart
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+# Add regular dependencies here.
+dependencies:
+  mineral: ^4.0.0-dev.6
+  mineral_cache: ^1.0.0-dev.3
+  path: ^1.9.0
+  yaml: ^3.1.2
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0

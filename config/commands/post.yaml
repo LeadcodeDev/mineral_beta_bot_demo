@@ -1,0 +1,50 @@
+commands:
+  post:
+    name:
+      _default: posts
+      fr: articles
+      en-GB: posts
+    description:
+      _default: Posts manager
+      fr: Management des posts
+      en-GB: Posts manager
+
+  role.fetch:
+    name:
+      _default: fetch
+      fr: tous
+      en-GB: all
+    description:
+      _default: Get all posts
+      fr: Récupère tous les posts
+      en-GB: Get all posts
+
+  role.store:
+    name:
+      _default: store
+      fr: nouveau
+      en-GB: new
+    description:
+      _default: Create one post
+      fr: Créé un nouveau post
+      en-GB: Create one post
+
+  role.update:
+    name:
+      _default: update
+      fr: update
+      en-GB: update
+    description:
+      _default: Update one post
+      fr: Met à jour un post
+      en-GB: Update one post
+
+  role.delete:
+    name:
+      _default: delete
+      fr: supprimer
+      en-GB: delete
+    description:
+      _default: Delete one post
+      fr: Supprimer un post
+      en-GB: Delete one post
