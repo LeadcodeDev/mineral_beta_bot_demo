@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: LeadcodeDev/kube_test
+          repository: LeadcodeDev/mineral_hexagonal_bot_test
           ref: main
 
       - name: Update helmfile develop
