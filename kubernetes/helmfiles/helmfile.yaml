@@ -1,5 +1,6 @@
 environments:
   develop:
+  production:
 ---
 releases:
   - name: mineral
